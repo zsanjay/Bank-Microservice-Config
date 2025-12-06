@@ -1,15 +1,15 @@
 # Bank-Microservice-Config
 
 ## This repository contains the Centralized Configuration for the Bank Microservices System, including:
-### Accounts Microservice
-### Cards Microservice
-### Loans Microservice
+##### Accounts Microservice
+##### Cards Microservice
+##### Loans Microservice
 
-## The configuration is managed using Spring Cloud Config Server, allowing each microservice to load its settings from this repo based on the active profile (default, qa, prod).
+##### The configuration is managed using Spring Cloud Config Server, allowing each microservice to load its settings from this repo based on the active profile (default, qa, prod).
 
 ## Repository Structure
 
-## Bank-Microservice-Config/
+Bank-Microservice-Config/
 │
 ├── accounts.yml
 ├── accounts-qa.yml
@@ -30,19 +30,13 @@ Each microservice has three profiles:
 
 Profile	Purpose
 
-### default	Local development
-### qa	QA environment & integration testing
-### prod	Production environment
+##### default	Local development
+##### qa	QA environment & integration testing
+##### prod	Production environment
 
 ## Microservices load the respective files automatically based on the active profile.
 
-How Microservices Load Configurations
-Spring Cloud Config uses naming conventions like:
-<application-name>-<profile>.yml
-<application-name>.yml
-
-
-### For example, for Accounts Service:
+##### For example, for Accounts Service:
 
 default → accounts.yml
 qa → accounts-qa.yml
@@ -64,7 +58,7 @@ spring:
         git:
           uri: https://github.com/zsanjay/Bank-Microservice-Config
           
-### If using a private repo, configure:
+## If using a private repo, configure:
 spring:
   cloud:
     config:
