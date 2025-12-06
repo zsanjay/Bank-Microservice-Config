@@ -72,16 +72,19 @@ KMS encrypted values ({cipher}) if using Spring Cloud Config + Encryption
 Use a PAT (Personal Access Token) if Config Server accesses this private repository.
 
 ## Features Included
-✔ Centralized configuration management
-✔ Profile-specific configuration
-✔ Microservice-wise YAML files
-✔ Version-controlled environment properties
-✔ Auto-refresh support using Spring Actuator
-✔ Easy integration with Spring Cloud Config Server
+
+##### Centralized configuration management
+##### Profile-specific environment support
+##### Dedicated YAML files per microservice
+##### Version-controlled configuration
+##### Seamless integration with Spring Cloud Config
+##### Actuator-based config refresh
+##### Infrastructure-ready setup for CI/CD
 
 ## Contribution Guidelines
-Create a branch
-Update configuration
-Validate YAML
-Raise PR
-Merge only after QA approval
+
+##### Create a branch
+##### Update configuration
+##### Validate YAML
+##### Raise PR
+##### Merge only after QA approval
