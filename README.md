@@ -7,15 +7,15 @@
 
 ##### The configuration is managed using Spring Cloud Config Server, allowing each microservice to load its settings from this repo based on the active profile (default, qa, prod).
 
-
 ## Profiles Supported
 Each microservice has three profiles:
 
-Profile	Purpose
+| Profile   | Description                            |
+| --------- | -------------------------------------- |
+| `default` | Local development environment          |
+| `qa`      | QA and integration testing environment |
+| `prod`    | Production deployment environment      |
 
-##### default	Local development
-##### qa	QA environment & integration testing
-##### prod	Production environment
 
 ## Microservices load the respective files automatically based on the active profile.
 
