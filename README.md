@@ -7,23 +7,6 @@
 
 ##### The configuration is managed using Spring Cloud Config Server, allowing each microservice to load its settings from this repo based on the active profile (default, qa, prod).
 
-## Repository Structure
-
-Bank-Microservice-Config/
-│
-├── accounts.yml
-├── accounts-qa.yml
-├── accounts-prod.yml
-│
-├── cards.yml
-├── cards-qa.yml
-├── cards-prod.yml
-│
-├── loans.yml
-├── loans-qa.yml
-├── loans-prod.yml
-│
-└── application.yml
 
 ## Profiles Supported
 Each microservice has three profiles:
