@@ -42,19 +42,22 @@ spring:
           uri: https://github.com/zsanjay/Bank-Microservice-Config
           
 ## If using a private repo, configure:
-spring:
+`spring:
   cloud:
     config:
       server:
         git:
           uri: https://github.com/zsanjay/Bank-Microservice-Config
-          username: your-username
-          password: your-PAT-token
+          username: your-github-username
+          password: your-personal-access-token`
+
           
 
 ## How to Refresh Config Changes
+
 After updating config files, refresh microservices using:
 POST http://<service-host>/actuator/refresh
+
 Ensure:
 management:
   endpoints:
@@ -63,13 +66,15 @@ management:
         include: "*"
         
 ## Security Best Practices
-Do NOT store secrets in plain text.
-Use:
-Vault
-AWS Secrets Manager
-Azure Key Vault
-KMS encrypted values ({cipher}) if using Spring Cloud Config + Encryption
-Use a PAT (Personal Access Token) if Config Server accesses this private repository.
+
+##### Avoid storing sensitive credentials in plain text.
+
+#### Use:
+##### HashiCorp Vault
+##### AWS Secrets Manager
+##### Azure Key Vault
+##### Encrypted values ({cipher}) from Spring Cloud
+##### Use GitHub PAT tokens for private repo access.
 
 ## Features Included
 
