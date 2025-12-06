@@ -42,14 +42,14 @@ spring:
           uri: https://github.com/zsanjay/Bank-Microservice-Config
           
 ## If using a private repo, configure:
-`spring:
+```spring:
   cloud:
     config:
       server:
         git:
           uri: https://github.com/zsanjay/Bank-Microservice-Config
           username: your-github-username
-          password: your-personal-access-token`
+          password: your-personal-access-token```
 
           
 
