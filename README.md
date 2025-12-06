@@ -26,31 +26,37 @@ qa → accounts-qa.yml
 prod → accounts-prod.yml
 
 Your microservice must set:
+```YAML
 spring:
   application:
     name: accounts
   profiles:
     active: qa
+```
     
 ## Running via Config Server
+
 Your Config Server should point to this Git repo:
+```YAML
 spring:
   cloud:
     config:
       server:
         git:
           uri: https://github.com/zsanjay/Bank-Microservice-Config
+```
           
 ## If using a private repo, configure:
-```spring:
+```YAML
+spring:
   cloud:
     config:
       server:
         git:
           uri: https://github.com/zsanjay/Bank-Microservice-Config
           username: your-github-username
-          password: your-personal-access-token```
-
+          password: your-personal-access-token
+```
           
 
 ## How to Refresh Config Changes
@@ -59,11 +65,13 @@ After updating config files, refresh microservices using:
 POST http://<service-host>/actuator/refresh
 
 Ensure:
+```YAML
 management:
   endpoints:
     web:
       exposure:
         include: "*"
+```
         
 ## Security Best Practices
 
